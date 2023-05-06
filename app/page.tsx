@@ -16,9 +16,10 @@ import { cardFavItems, categoryItems } from "@/utils/data";
 import FavouriteCard from "@/src/components/FavouriteCard/FavouriteCard";
 import ProductCard from "@/src/components/ProductCard/ProductCard";
 const HomePage: React.FC = () => {
+
   return (
     <div
-      className={`min-[1884px]:w-[75%] min-[1608px]:w-[85%] min-[1400px]:w-[90%] min-[1344px]:w-[95%] min-[1270px]:w-[98%] max-[1270px]:w-[98%] m-auto border border-red-600`}
+      className={`w-[75%] min-[1884px]:w-[75%] min-[1608px]:w-[80%] min-[1400px]:w-[90%] min-[1344px]:w-[95%] min-[1270px]:w-[98%] max-[1270px]:w-[98%] m-auto border border-red-600`}
     >
       <div className="w-[90%] flex justify-center items-center gap-14 mt-[2.1rem]">
         <div>
