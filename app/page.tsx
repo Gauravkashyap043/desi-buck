@@ -17,7 +17,9 @@ import FavouriteCard from "@/src/components/FavouriteCard/FavouriteCard";
 import ProductCard from "@/src/components/ProductCard/ProductCard";
 const HomePage: React.FC = () => {
   return (
-    <div className={`w-[75%] m-auto border border-red-600`}>
+    <div
+      className={`min-[1884px]:w-[75%] min-[1608px]:w-[85%] min-[1400px]:w-[90%] min-[1344px]:w-[95%] min-[1270px]:w-[98%] max-[1270px]:w-[98%] m-auto border border-red-600`}
+    >
       <div className="w-[90%] flex justify-center items-center gap-14 mt-[2.1rem]">
         <div>
           <p className="text-[13px] font-[600] text-[#3F3F3F] leading-[14px]">
@@ -82,7 +84,7 @@ const HomePage: React.FC = () => {
       </div>
 
       <ShopBy name="ALL PRODUCTS" />
-      <div className="grid grid-cols-4 place-items-center">
+      <div className="product-card-div grid grid-cols-4 place-items-center">
         <ProductCard />
         <ProductCard />
         <ProductCard />
