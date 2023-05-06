@@ -7,19 +7,20 @@ import Image from "next/image";
 import { FaSearch, FaRegHeart, FaHeart, FaRegUser } from "react-icons/fa";
 import Link from "next/link";
 import { useSearchParams } from 'next/navigation'
+import logo from "../../../assets/images/logo.png"
 
-const Navbar: React.FC = () => {
+const Navbar: React.FC = () : JSX.Element => {
   const { data: session } = useSession();
   const [showLogin, setShowLogin] = useState(false);
   const searchParams = useSearchParams()
-  const callbackUrl = searchParams.get('callbackUrl')
+  const callbackUrl: string | null = searchParams.get('callbackUrl');
   console.log(session);
 
   return (
     <nav className="w-full h-[120px] m-auto bg-white">
       <div className="w-[75%] m-auto h-full flex justify-between items-center">
-        <div className="">
-          <Image src="" alt="this is logo" className="cursor-pointer" />
+        <div className="w-[73px] h-[73px]">
+          <Image src={logo} alt="this is logo" className="cursor-pointer" />
         </div>
         <div className="w-[21rem] m-auto  border flex items-center gap-2 rounded-full py-[12px] px-[21px]">
           <div>

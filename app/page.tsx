@@ -42,7 +42,6 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </div>
-
       <div className="w-full  flex justify-between h-[250px] mt-[1.2rem]">
         <div className="h-full w-[49.5%] rounded ">
           <Image src={electronics} alt="img" className="w-full h-full" />
